@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: WHITE;
+}
+
+.header{
+    padding: 0 5rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 209, 199);
+}
+.header.logo{
+    height: 0.2 rem;
+    justify-self: start;
+}
+.navbar-list{
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+    list-style: none;
+}
+.navbar-list a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+
+}
+.navbar .ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.navbar .ul li:hover::after{
+    transform: scaleX(1);
+}
+
+.container{
+    height: 80vh;
+    background-color: rgb(139, 0, 0);
+    display: flex;
+    gap: 20px;
+    padding: 100px 480px
+ 
+}
+.container-coll{
+    height:120vh ;
+    background-color: rgb(192, 166, 217);
+    
+}
+.container-prod{
+    height:150vh ;
+    background-color: rgb(16, 61, 104);
+    
+}
+
+.img1{
+    background-image: url(image/img1.jpg);
+    size: 50px;
+}
+.img2{
+ background-image: url(image/img2.jpg);
+ size: 50px;
+}
+.img3{
+    background-image: url(image/ima-7.avif);
+    size: 50px;
+}
+.img4{
+ background-image: url(image/img4.jpg);
+ size: 50px;
+}
+.img5{
+    background-image: url(image/img5.jpg);
+    size: 50px;
+}
+.ctrl{
+    height: 400px;
+    width: 100px;
+    background-position: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    
+
+}
+.ctrl:hover{
+    width: 300px;
+}
+.product{
+    height: 80vh;
+    background-color: rgb(9, 9, 9);
+}
+.product.p{
+    text-align: center;
+    color: white;
+}
